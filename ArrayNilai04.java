@@ -15,8 +15,18 @@ public class ArrayNilai04 {
             nilaiAkhir[i] = scan.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai Akhir ke - " + i + " adalah " + nilaiAkhir[i]);
+        /*
+         * for (int i = 0; i < 10; i++) {
+         * System.out.println("Nilai Akhir ke - " + i + " adalah " + nilaiAkhir[i]);
+         * }
+         */
+
+        for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke - " + i + " dinyatakan Lulus!");
+            } else {
+                System.out.println("Mahasiswa ke - " + i + " sayang banget Tidak Lulus..");
+            }
         }
     }
 }
